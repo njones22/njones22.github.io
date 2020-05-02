@@ -100,8 +100,19 @@ a {
     justify-content: center;
     position: relative;
     bottom: 13vw; */
+
+/* animation */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all ease-in-out;
+
+
 }
 
+#calendar-appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
 
 
 /* ITEM SIZES (in descending order) */
