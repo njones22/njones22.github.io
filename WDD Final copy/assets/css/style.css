@@ -1,0 +1,446 @@
+/* SKELETON FOR WHOLE SITE */
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* NAVBARs */
+#navbar { /* Navbar */ 
+	width: 100%; /* Width of the sidebar */
+	position: static; /* Fixed (stays in place while scrolling); alternative is 'static' */
+	z-index: 1; /* Stay as top layer */
+	top: 0; /* Stay at the top */
+	overflow-x: hidden; /* Disable horizontal scroll */
+    border-bottom: 1px dashed #2626A0;
+} 
+
+#index-navbar { /* Navbar */ 
+    width: 100%; /* Width of the sidebar */
+    position: static; /* Fixed (stays in place while scrolling); alternative is 'static' */
+    z-index: 1; /* Stay as top layer */
+    top: 0; /* Stay at the top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    border-bottom: 1px dashed #FF2017;
+} 
+
+#navbar a { /* Navbar links */
+    padding: 5px 24px 10px 0px;
+    text-decoration: none;
+    font-family: 'infini';
+    font-size: 18px;
+    color: #2626A0;
+    display: inline-block;
+    align-items: flex-end;
+    float: right;
+	line-height: 14px;
+}
+
+#index-navbar a { /* Navbar links */
+    padding: 5px 24px 10px 0px;
+    text-decoration: none;
+    font-family: 'infini';
+    font-size: 18px;
+    color: #FF2017;
+    display: inline-block;
+    align-items: flex-end;
+    float: right;
+    line-height: 14px;
+}
+
+#navbar a:hover { /* Navbar Hover */
+    color: #00FF00;
+}
+
+#index-navbar a:hover { /* Navbar Hover */
+    color: #00FF00;
+}
+
+/* On smaller screens w/ width less than 768px, change the style of the navbar */
+@media screen and (max-width: 768px) {
+    #navbar a {
+    	font-size: 16px;
+    	line-height: 12px;
+    }
+    #title {
+    	padding-top: 10px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* INDEX PAGE */
+#index {
+	background-color: #B57AA1;	/* in case gradient doesn't work */
+    background: #9BBF77;
+    /* height: 3500px;  /* Used to enable scrolling */
+    background: linear-gradient(#ffffff, #ffffff, #ffffff); 
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTENT FLEXBOX POSITIONING */
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.content { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 13vw; */
+}
+
+
+
+/* ITEM SIZES (in descending order) */
+
+#title {
+    font-family: 'infini';
+    font-size: 15vw;
+    font-weight: bold;
+    line-height: 12vw;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #FF2017;
+    position: relative;
+    bottom: 10vw; 
+}
+
+#cal-title {
+    display: flex;
+    flex-direction: row;
+    /* width: 30%; */
+    position: relative; 
+    right: 15.8%; 
+    top: 125px;
+    /* top: 8.4vw; */
+    font-family: 'infini';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    /*border: 1px dashed #1601FE;*/
+}
+
+#cal-title-1 {
+    color: #1601FE;
+}
+
+#cal-title-2 {
+  /*  color: #1601FE; */
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #1601FE;  */
+}
+
+.row {
+    text-align: center;
+    align-items: space-between;
+}
+
+#numbers {
+    border: 1px dashed #1601FE;
+    padding-bottom: 60px;
+    padding-top: 5px;
+}
+
+.item {
+    font-family: 'infini';
+    color: #1601FE;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 3;
+    height: 0vw; 
+    width: 8vw;
+    position: relative;
+    display: inline-block;
+}
+
+.item:hover {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #1601FE;
+}
+
+#album-pile {
+    width: 25%;
+    height: 25%;
+    margin-top: 0vw;
+    position: relative;
+    bottom: 26vw; 
+}
+
+#arrow { 
+    width: 15%;
+    height: 15%;
+    position: relative;
+    left: 20%; 
+    bottom: 15.2vw; 
+ }
+
+
+
+/* ANIMATIONS */
+
+@keyframes wiggle {
+    0% {
+        width: 25%;
+        height: 25%;
+        transform: rotate(0deg);
+    }
+    50% {
+        width: 26%;
+        height: 26%;
+        transform: translateY(-2%) translateX(0%) rotate(0deg) scale(1);
+    }
+    100% {
+        width: 25%;
+        height: 25%;
+        transform: rotate(0deg);
+    }
+}
+
+#album-pile:hover {
+    animation: wiggle 0.5s ease-in 0s 1 forwards;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+/* BACK ARRROW */
+
+#day-1 {
+    background-color: #E6D576;  /* in case gradient doesn't work */
+    /* height: 3500px;   Used to enable scrolling */
+    /* background-image: linear-gradient(#ffffff, #4545B2); */
+
+    background: #ffffff;
+    /* background: linear-gradient(#ffffff, #4545B2); */
+}
+
+#og-back-arrow {
+    position: absolute;
+    margin: 2vw;
+    padding: 0vw, 3vw, 0vw, 3vw;
+    width: 5%;
+}
+
+#back-arrow-hover {
+    position: absolute;
+    margin: 2vw;
+    padding: 0vw, 3vw, 0vw, 3vw;
+    width: 5%;
+    transform: translateY(-6%) translateX(2.8%) scale(1.65);
+}
+
+.back-arrow span{
+    display: none;
+}
+
+.back-arrow:hover span{
+    display: block;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* PLAYLIST PAGE */
+
+#playlist {
+    background-color: #ffffff;  /* in case gradient doesn't work */
+    height: 3500px;  /* Used to enable scrolling */
+    background-image: linear-gradient(#ffffff, #4545B2);
+
+    background: #ffffff;
+    background: linear-gradient(#ffffff, #4545B2);
+}
+
+#playlist-cards {
+    border: 1px dashed #2626A0;
+    margin-top: 7vw;
+    margin-right: 22vw;
+    margin-bottom: 7vw;
+    margin-left: 22vw;
+}
+
+#playlist-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    /* PUT A TOP MARGIN ON THE TOP CARD SEPARATELY */
+    margin-right: 2vw;
+    margin-left: 2vw;
+ /* background-color: #CDE5C5;
+    margin-top: 1vw;
+    margin-bottom: 1vw;     */
+    border-bottom: 1px dashed #2626A0;   /* TAKE BOTTOM BORDER OFF LAST CARD SEPARATELY */
+    border-radius: 5px;
+}
+
+#top-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-top: .3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+ /* background-color: #CDE5C5;
+    margin-top: 1vw;
+    margin-bottom: 1vw;     */
+    border-bottom: 1px dashed #2626A0; 
+    border-radius: 5px;
+}
+
+#bottom-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-top: .3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-bottom: .3vw;
+ /* background-color: #CDE5C5;
+    margin-top: 1vw;
+    margin-bottom: 1vw;     */
+}
+
+#song-info {
+    width: 45vw;
+}
+
+#song-title {
+    font-family: 'infini';
+    color: #2626A0;
+    font-size: 21px;
+    line-height: .2;
+    font-weight: bold;
+    margin-bottom: 0vw;
+}
+
+#song-artist {
+    font-family: 'infini';
+    color: #2626A0;
+    font-size: 16px; 
+    line-height: 1;
+    margin-bottom: 1.4vw;
+}
+
+#song-cover { 
+    padding-top: .6vw;
+    padding-right: .6vw;
+    padding-bottom: .6vw;
+    margin: .5vw;
+}
+
+#song-cover-img {
+    width: 7.5vw;
+    border-radius: 5px;
+}
+
+/* #hr {border: 1px solid #2626A0;} */
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+/* DAY PAGES */
+
+#album-card {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    margin-top: 7vw;
+    margin-right: 22vw;
+    margin-bottom: 7vw;
+    margin-left: 22vw;
+    border: 1px dashed #2626A0;
+    justify-content: center;
+}
+
+#album-info {
+    font-family: 'infini';
+    color: #2626A0;
+    /* border: 1px solid #2626A0; */
+    padding: 0vw;
+    /* margin-left: 2vw;  */
+    margin-right: 1vw; */
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    width: 28vw;         /*  <-----  !!   */
+}
+
+#album-cover { 
+    /* padding: .6vw; */
+    margin-left: 1vw; */
+    /* margin-right: 2vw; */
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+}
+
+#date {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 1vw;
+}
+
+#song-name {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: bold;
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+#artist {
+    font-size: 18px; 
+    line-height: 1;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+#hr {border: .3px dashed #2626A0;}
+
+#album-cover-img {
+    width: 22vw;
+}
+
+/* On smaller screens w/ width less than 768px, change the font size of the album info */
+@media screen and (max-width: 768px) {
+    #date {
+        font-size: 18px;
+        line-height: 1;
+    }
+    #song-name {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: bold;
+    }
+    #artist {
+        font-size: 24px; 
+        line-height: 1;
+    }
+}
+
+
+
+
+
